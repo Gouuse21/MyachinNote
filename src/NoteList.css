@@ -1,0 +1,80 @@
+/* NoteList.css */
+.noteListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 400px; /* Устанавливаем максимальную высоту контейнера */
+    width: 300px; /* Устанавливаем ширину 300px */
+    height: 500px; /* Устанавливаем высоту 500px */
+    margin-top: 120px; /* Перемещаем список заметок влево на 100px */
+    margin-left: -230px; /* Перемещаем список заметок влево на 100px */
+    overflow-y: auto; /* Добавляем вертикальную прокрутку при необходимости */
+  }
+  
+  .noteList {
+    flex: 1;
+    overflow-y: auto; /* Добавляем вертикальную прокрутку для списка заметок */
+    max-height: 320px; /* Устанавливаем максимальную высоту списка */
+  }
+
+/* NoteList.css */
+/* ... (остальные стили) */
+
+.createNoteButton {
+  position: absolute;
+  bottom: 0px;
+  left: -245px;
+  width: 228px;
+  height: 60px;
+  background-color: #D9D9D9;
+  border-radius: 10px 5px 5px 22px;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+  font-weight: 600; /* Установить полужирное начертание (Semi Bold) */
+  font-size: 20px; /* Установить размер 20px */
+}
+
+.createNoteButton:hover {
+  background-color: #CCCCCC; /* Изменение цвета при наведении */
+  color: #000000; /* Изменение цвета текста при наведении */
+}
+
+.createNoteButton:active {
+  background-color: #AAAAAA; /* Изменение цвета при нажатии */
+  color: #000000; /* Изменение цвета текста при нажатии */
+}
+
+.noteListContainer ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding-left: 0; /* Убираем отступ слева */
+}
+
+.noteListContainer ul li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 15ch;
+  line-height: 1.5; /* Устанавливаем вертикальный отступ между строками в 1.5 */
+}
+
+.noteListContainer ul li.activeNote {
+  position: relative;
+}
+
+.noteListContainer ul li.activeNote {
+  background-color: #ffffff; /* Цвет фона для выделенной заметки */
+  padding-left: 5px; /* Добавление отступа слева на 5px */
+  margin-left: 5px; /* Смещение влево на 5px */
+  border-radius: 5px; /* Скругление углов */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Добавление тени */
+}

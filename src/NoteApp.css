@@ -1,0 +1,97 @@
+/* NoteApp.css */
+body {
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
+  }
+  
+  .noteAppContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Цвет фона сайта */
+  }
+  
+  .Back {
+    width: 1255px;
+    height: 665px;
+    background-color: #eeeeee; /* Цвет блока Back */
+    border-radius: 40px; /* Закругление углов */
+    position: relative;
+  }
+  
+  .UpBack {
+    width: 960px;
+    height: 615px;
+    background-color: #ffffff; /* Цвет блока UpBack */
+    border-radius: 20px 20px 20px 5px; /* Закругление углов справа сверху, слева сверху и слева внизу */
+    position: absolute;
+    top: 25px; /* Отступ от верхнего края блока Back */
+    right: 25px; /* Отступ от правого края блока Back */
+  }
+
+/* NoteApp.css */
+/* ... (остальные стили) */
+
+.UpName {
+  width: 960px; /* Ширина блока UpName */
+  height: 60px; /* Высота блока UpName */
+  background-color: #dcdcdc; /* Цвет блока UpName */
+  border-radius: 20px 20px 0 0; /* Закругление углов сверху */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0; /* Положение блока UpName сверху блока UpBack */
+}
+
+/* NoteApp.css */
+/* ... (остальные стили) */
+
+.noteTitleInput {
+    background: none; /* Скрыть фон */
+    border: none; /* Убрать обводку */
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-weight: 600; /* Установить полужирное начертание (Semi Bold) */
+    font-size: 20px; /* Установить размер 20px */
+    margin-top: 20px; /* Переместить поле ввода ниже на 20px */
+    margin-left: 25px; /* Переместить поле ввода на 25px влево */
+    max-width: 700px; /* Установить ширину 700px */
+  }
+  
+  .noteTitleInput:focus {
+    outline: none; /* Убрать рамку при выделении */
+  }
+
+/* ... (остальные стили) */
+
+.MyachinNote {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-weight: 800; /* Установить толщину шрифта Extra Bold */
+    font-size: 32px; /* Установить размер шрифта 32px */
+  }
+
+/* NoteApp.css */
+/* ... (другие стили) */
+
+.DateDisplay {
+    margin-top: -450px; /* Добавляем отступ сверху */
+    margin-left: 600px; /* Добавляем отступ сверху */
+    font-family: 'Inter', sans-serif; /* Устанавливаем шрифт Inter */
+    font-weight: 300; /* Устанавливаем толщину шрифта Light */
+    color: #909090; /* Устанавливаем цвет текста #909090 */
+  }
+
+/* NoteApp.css */
+/* ... (остальные стили) */
+
+.header {
+    font-family: 'Inter', sans-serif; /* Устанавливаем шрифт Inter */
+    font-weight: 600; /* Устанавливаем полужирное начертание (Semi Bold) */
+    font-size: 32px; /* Устанавливаем размер 32px */
+  }
+  

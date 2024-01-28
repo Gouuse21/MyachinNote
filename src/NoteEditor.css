@@ -1,0 +1,118 @@
+/* NoteEditor.css */
+.noteEditor {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .noteDetails {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+  }
+
+/* NoteEditor.css */
+/* ... (остальные стили) */
+
+.saveNoteButton {
+    width: 155px; /* Установить ширину 155px */
+    height: 60px; /* Установить высоту 60px */
+    background-color: #FFFFFF; /* Установить цвет фона */
+    border: none; /* Убрать обводку */
+    border-radius: 20px 20px 0 0; /* Установить закругление вверхних углов */
+    font-size: 20px; /* Установить размер шрифта 20px */
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-weight: 600; /* Установить полужирное начертание (Semi Bold) */
+    color: #000000; /* Установить цвет текста */
+    position: absolute; /* Позиционировать абсолютно */
+    top: 0px; /* Поднять на 1px вверх */
+    right: 0; /* Прижать к правому краю */
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease; /* Добавляем плавное изменение цвета */
+  }
+  
+  .saveNoteButton:hover {
+    background-color: #E0E0E0; /* Изменяем цвет при наведении */
+  }
+  
+  .saveNoteButton:active {
+    background-color: #87ebbc; /* Изменяем цвет при нажатии */
+  }
+
+.noteContentInput {
+    max-width: 700px; /* Установить максимальную ширину 750px */
+    height: 450px !important; /* Установить высоту 490px с использованием !important для переопределения других стилей */
+    resize: none; /* Запретить изменение размера */
+    border: none; /* Убрать обводку */
+    outline: none; /* Убрать фокус */
+    padding: 10px; /* Добавить отступ внутри поля */
+    font-size: 20px; /* Установить размер шрифта 20px */
+    font-family: 'Inter', sans-serif; /* Установить шрифт Inter */
+    font-weight: 300; /* Установить тонкий шрифт (Light) */
+    position: absolute; /* Позиционирование абсолютно */
+    top: 100px; /* Переместить вниз на 100px */
+    left: 30px; /* Прижать к левому краю */
+    scrollbar-width: thin; /* Толщина полосы прокрутки */
+    scrollbar-color: #999999 #f2f2f2; /* Цвет полосы прокрутки и её фона */
+  }
+
+  .noteContentInput::-webkit-scrollbar {
+    width: 12px; /* Ширина полосы прокрутки */
+  }
+  
+  .noteContentInput::-webkit-scrollbar-thumb {
+    background-color: #999999; /* Цвет ползунка полосы прокрутки */
+    border-radius: 6px; /* Радиус скругления углов ползунка */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Начальное состояние: немного внизу и невидимо */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Конечное состояние: видимо и на своем месте */
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    animation: fadeIn 0.3s ease, fadeOut 0.3s ease 2.5s forwards; /* Применяем анимацию и указываем задержку исчезновения */
+  }
+  
